@@ -24,7 +24,7 @@ app.get('/', (c) => {
       <x-markdown2html src="static/x-time.md"></x-markdown2html>
       <script src="https://custom-element.pages.dev/custom-element.js" crossorigin="anonymous"></script>        
       {import.meta.env.PROD ? (
-          <script type="module" src="customElement.js"></script>
+          <script type="module" src="static/customElement.js"></script>
         ) : (
           <script type="module" src="src/customElement.ts"></script>
         )}
