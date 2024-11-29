@@ -10,7 +10,7 @@ const routes = app.get('/api/clock', (c) => {
 
 export type AppType = typeof routes
 
-app.get('*', (c) => {
+app.get('/', (c) => {
   return c.html(
     <html>
       <head>
