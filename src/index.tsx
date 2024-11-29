@@ -21,11 +21,12 @@ app.get('/', (c) => {
       <body>
       <x-markdown2html src="static/library.md"></x-markdown2html>
       <x-markdown2html src="static/x-year.md"></x-markdown2html>
+      <x-markdown2html src="static/x-time.md"></x-markdown2html>
       <script src="https://custom-element.pages.dev/custom-element.js" crossorigin="anonymous"></script>        
       {import.meta.env.PROD ? (
-          <script type="module" src="/static/customElement.js"></script>
+          <script type="module" src="customElement.js"></script>
         ) : (
-          <script type="module" src="/src/customElement.ts"></script>
+          <script type="module" src="src/customElement.ts"></script>
         )}
       </body>
     </html>

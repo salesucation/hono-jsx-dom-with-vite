@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
         rollupOptions: {
           input: './src/customElement.ts',
           output: {
-            entryFileNames: 'static/customElement.js'
+            entryFileNames: 'customElement.js'
           }
         }
       }
