@@ -3,7 +3,7 @@
 TLDR;
 
 ```sh
-pip install -re requirements.txt
+pip install -r requirements.txt
 ansible-playbook playbook.yml
 npm install
 npm run dev
