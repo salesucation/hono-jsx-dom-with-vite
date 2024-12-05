@@ -1,6 +1,5 @@
 {
   "name": "hono-jsx-dom-with-vite",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode client && vite build",
@@ -8,6 +7,10 @@
     "deploy": "$npm_execpath run build && wrangler pages deploy dist"
   },
   "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/context-zone": "^1.29.0",
+    "@opentelemetry/instrumentation-document-load": "^0.43.0",
+    "@opentelemetry/sdk-trace-web": "^1.29.0",
     "hono": "^4.2.3"
   },
   "devDependencies": {
